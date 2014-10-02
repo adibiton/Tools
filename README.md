@@ -1,6 +1,6 @@
 Tools
 =====
 
-Different tools
-setproxy $1
-$1 - (work, home)
+setproxy.bat $1 - set proxy parameters for git/npm
+
+$1 - work/home
