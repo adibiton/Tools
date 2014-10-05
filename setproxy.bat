@@ -20,6 +20,9 @@ IF "%1" == "home" (
 	npm config rm https-proxy
 	REM echo npm http proxy
 	REM npm config get https-proxy
+
+	REM Set Bower proxy
+	set HTTPS_PROXY=
 	 
 	)
 IF "%1" == "work" ( 
@@ -42,4 +45,7 @@ IF "%1" == "work" (
 	npm config set https-proxy http://proxy.wdf.sap.corp:8080
 	REM echo npm http proxy
 	REM npm config get https-proxy  
+
+	REM Set Bower proxy
+	set HTTPS_PROXY=http://proxy.wdf.sap.corp:8080
 ) 
