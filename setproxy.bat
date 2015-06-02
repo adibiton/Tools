@@ -22,7 +22,8 @@ IF "%1" == "home" (
 	REM npm config get https-proxy
 
 	REM Set Bower proxy
-	set HTTPS_PROXY=
+	setx HTTPS_PROXY
+	setx HTTP_PROXY
 	 
 	)
 IF "%1" == "work" ( 
@@ -47,5 +48,6 @@ IF "%1" == "work" (
 	REM npm config get https-proxy  
 
 	REM Set Bower proxy
-	set HTTPS_PROXY=http://proxy.wdf.sap.corp:8080
+	setx HTTPS_PROXY http://proxy.wdf.sap.corp:8080
+	setx HTTP_PROXY http://proxy.wdf.sap.corp:8080
 ) 

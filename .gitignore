@@ -14,30 +14,27 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
-# =========================
-# Operating System Files
-# =========================
+# Ignore .gitignore and target folders
+src/*/.gitignore
+src/*/target/
+/target
 
-# OSX
-# =========================
+# Ignore Eclipse project and settings files
+.classpath
+.settings
+.project
+.externalToolBuilders
 
-.DS_Store
-.AppleDouble
-.LSOverride
+# Ignore IntelliJ project and settings files
+.idea
+*.iml
 
-# Icon must end with two \r
-Icon
+# Ignore temp folders
+grunt/bin
 
-# Thumbnails
-._*
+# Ignore npm files/folders
+node_modules
+npm-debug.log
 
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+# Ignore bower folder
+bower_components
