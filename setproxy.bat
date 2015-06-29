@@ -1,5 +1,5 @@
 @echo off
-echo Setting proxy setting to %1
+echo Setting proxy to %1
 IF "%1" == "home" ( 
 	REM  Git set http proxy 
 	git config --global --remove-section http
